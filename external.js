@@ -13,6 +13,11 @@ function validateData(){
 		btnLogin.disabled = true;
 	}
 }
+function authenticate(){
+	targetElementLogin.style.display = "none";
+	targetElement.innerHTML = "Hello " + sUserName + " you are good!!";
+	mainPage.style.display = "block";
+}
 
 function userLogout(){
 	targetElementLogin.style.display = "block";
