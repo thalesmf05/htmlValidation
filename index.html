@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form example</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="loginScreen">
+			<label>User name</label>
+			<input onkeyup="validateData()" type="text" id="input" />
+			<button id="btnLogin" onclick="authenticate()" disabled>Click here to validate</button>
+		</div>
+		
+		
+		<div id="mainPage" hidden>
+			<h1 id="element"></h1>
+			<button onclick="userLogout()" id="">Click here to logout</button>
+		</div>
+		
+		
+		<script src="external.js"></script>
+	</body>
+</html>
